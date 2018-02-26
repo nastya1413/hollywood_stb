@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="FullCicle" verbose="1" >
+<test name="Nopackage" >
+    <classes>
+        <class name="com.stb.hollywood.tests.ConnectTest" />
+    </classes>
+</test>
+
+<test name="Regression1">
+    <classes>
+        <class name="com.stb.hollywood.tests.ConnectTest" />
+        <class name="com.stb.hollywood.tests.ConnectTest" />
+    </classes>
+</test>
+</suite>
