@@ -19,8 +19,9 @@ public abstract class BaseTest {
     }
 
     @BeforeMethod
-    public void setupTest() {
+    public WebDriver setupTest() {
         driver = new ChromeDriver();
+        return driver;
     }
 
     public void openHollywoodURL(){
