@@ -1,5 +1,5 @@
 package com.stb.hollywood.pages;
 
-public class SlingboxDemo {
+public class SlingboxDemoPage {
 //    TO INIT LOCATORS
 }
