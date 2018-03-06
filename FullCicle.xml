@@ -9,8 +9,7 @@
 
 <test name="Regression1">
     <classes>
-        <class name="com.stb.hollywood.tests.ConnectTest" />
-        <class name="com.stb.hollywood.tests.ConnectTest" />
+        <class name="com.stb.hollywood.tests.JS_Test" />
     </classes>
 </test>
 </suite>

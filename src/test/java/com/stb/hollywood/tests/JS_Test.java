@@ -1,5 +1,7 @@
 package com.stb.hollywood.tests;
 
+import com.stb.hollywood.pages.HollywoodSlingboxDemoPage;
+import com.stb.hollywood.steps.HollywoodSlingboxDemoSteps;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -9,6 +11,7 @@ public class JS_Test extends BaseTest{
 
     private JavascriptExecutor js;
     private WebDriver driver;
+    HollywoodSlingboxDemoSteps hollywoodSteps = new HollywoodSlingboxDemoSteps();
 
     @Test
     public void testJS() throws InterruptedException {
@@ -17,11 +20,9 @@ public class JS_Test extends BaseTest{
 
         openHollywoodURL();
         Thread.sleep(10000);
-        driver.findElement(By.id("box-finderId")).clear();
-        driver.findElement(By.id("box-finderId")).sendKeys("252300CBA05BAA4397B00C06440C5B4C");
-        driver.findElement(By.id("box-pass")).clear();
-        driver.findElement(By.id("box-pass")).sendKeys("admin");
-        driver.findElement(By.id("box-connect-and-stream")).click();
+        hollywoodSteps.setFinderID("252300CBA05BAA4397B00C06440C5B4C");
+        hollywoodSteps.setPassword("admin");
+        hollywoodSteps.clickConnectAndStreamButton();
         Thread.sleep(20000);
 
         js = (JavascriptExecutor) driver;
