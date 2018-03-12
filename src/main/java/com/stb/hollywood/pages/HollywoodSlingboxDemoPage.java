@@ -87,6 +87,8 @@ public class HollywoodSlingboxDemoPage {
         return $(By.id("btn btn-mini yellow_button"));
     }
 
+    public SelenideElement getPlayer() {return $(By.id("bitmovinplayer-video-dashPlayer"));}
+
     public SelenideElement getBoxStatusLabel()
     {
         return $(By.id("box_status"));

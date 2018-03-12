@@ -77,6 +77,11 @@ public class HollywoodSlingboxDemoSteps {
         hllwd_page.getCC_Config().click();
     }
 
+    @Step("Get Video player attribute 'isVisible'")
+    public boolean isPlayerVisible(){
+        return hllwd_page.getPlayer().isDisplayed();
+    }
+
     @Step("Get Box Status text")
     public String getBoxStatusText()
     {
