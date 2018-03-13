@@ -60,19 +60,4 @@
         </plugins>
     </build>
 
-    <reporting>
-        <excludeDefaults>true</excludeDefaults>
-        <plugins>
-            <plugin>
-                <groupId>io.qameta.allure</groupId>
-                <artifactId>allure-maven</artifactId>
-                <version>2.9</version>
-                <configuration>
-                    <resultsDirectory>allure-results</resultsDirectory>
-                    <reportDirectory>allure-report</reportDirectory>
-                </configuration>
-            </plugin>
-        </plugins>
-    </reporting>
-
 </project>

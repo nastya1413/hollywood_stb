@@ -3,13 +3,13 @@
 <suite name="FullCicle" verbose="1" >
 <test name="Nopackage" >
     <classes>
-        <class name="com.stb.hollywood.tests.ConnectTest" />
+        <class name="com.stb.hollywood.tests.CheckVideoDurationTest" />
     </classes>
 </test>
 
 <test name="Regression1">
     <classes>
-        <class name="com.stb.hollywood.tests.JS_Test" />
+        <!--<class name="com.stb.hollywood.tests.JS_Test" />-->
     </classes>
 </test>
 </suite>

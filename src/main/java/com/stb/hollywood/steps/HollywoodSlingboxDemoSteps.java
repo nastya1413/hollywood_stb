@@ -1,7 +1,11 @@
 package com.stb.hollywood.steps;
 
+import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.WebDriverRunner;
 import com.stb.hollywood.pages.HollywoodSlingboxDemoPage;
 import io.qameta.allure.Step;
+
+import java.util.concurrent.TimeUnit;
 
 public class HollywoodSlingboxDemoSteps {
 
@@ -77,6 +81,11 @@ public class HollywoodSlingboxDemoSteps {
         hllwd_page.getCC_Config().click();
     }
 
+    @Step("Waiting for Video player")
+    public void waitForPlayer(){
+        hllwd_page.getPlayer().waitUntil(Condition.appears, 30000);
+    }
+
     @Step("Get Video player attribute 'isVisible'")
     public boolean isPlayerVisible(){
         return hllwd_page.getPlayer().isDisplayed();
@@ -87,4 +96,9 @@ public class HollywoodSlingboxDemoSteps {
     {
         return hllwd_page.getBoxStatusLabel().text();
     }
+//
+//    @Step("Delay")
+//    public void delay(long seconds){
+//        WebDriverRunner.getWebDriver().manage().timeouts().implicitlyWait(seconds, TimeUnit.SECONDS);
+//    }
 }
