@@ -86,6 +86,11 @@ public class HollywoodSlingboxDemoSteps {
         hllwd_page.getPlayer().waitUntil(Condition.appears, 30000);
     }
 
+    @Step("Waiting for starting streaming")
+    public void waitForStreaming(){
+        hllwd_page.getStreamInfoAudioBuffer().waitUntil(Condition.not(Condition.matchText("*-*")), 30000);
+    }
+
     @Step("Get Video player attribute 'isVisible'")
     public boolean isPlayerVisible(){
         return hllwd_page.getPlayer().isDisplayed();
@@ -96,9 +101,14 @@ public class HollywoodSlingboxDemoSteps {
     {
         return hllwd_page.getBoxStatusLabel().text();
     }
-//
-//    @Step("Delay")
-//    public void delay(long seconds){
-//        WebDriverRunner.getWebDriver().manage().timeouts().implicitlyWait(seconds, TimeUnit.SECONDS);
-//    }
+
+    @Step("Get Audio stream info buffering text")
+    public String getStreamInfoAudioBuffer(){
+       return hllwd_page.getStreamInfoAudioBuffer().innerText();
+    }
+
+    @Step("Delay")
+    public void delay(long milliSeconds) throws InterruptedException {
+            Thread.sleep(milliSeconds);
+    }
 }

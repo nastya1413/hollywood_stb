@@ -93,4 +93,8 @@ public class HollywoodSlingboxDemoPage {
     {
         return $(By.id("box_status"));
     }
+
+    public SelenideElement getStreamInfoAudioBuffer() {
+        return $(By.xpath(".//*[@id='streamInfo-audio-buffer']//*[@class='data-value']"));
+    }
 }
