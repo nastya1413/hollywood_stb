@@ -38,7 +38,7 @@ public class ConnectAndStreamTest extends BaseTest{
             if (outputBeforeDalay != null) {
                 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                 outputAfterDelay = Float.parseFloat((String) js.executeScript(script));
-                Verify.verify(Math.abs(outputBeforeDalay - outputAfterDelay) >= 10);
+                Verify.verify(Math.abs(outputBeforeDalay - outputAfterDelay) >= 10.0f);
             } else {
                 Assert.fail("Current time shouldn't be null");
             }
