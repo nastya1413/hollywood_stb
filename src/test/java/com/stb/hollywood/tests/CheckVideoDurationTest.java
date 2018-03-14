@@ -4,6 +4,7 @@ import com.google.common.base.Verify;
 import com.stb.hollywood.steps.HollywoodSlingboxDemoSteps;
 import com.stb.hollywood.utils.JScripts;
 import io.qameta.allure.Description;
+import io.qameta.allure.Step;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -32,8 +33,6 @@ public class CheckVideoDurationTest extends BaseTest{
         hollywoodSteps.setPassword("admin");
         hollywoodSteps.clickConnectAndStreamButton();
 
-        hollywoodSteps.waitForPlayer();
-
         if(hollywoodSteps.isPlayerVisible()) {
             driver = getWebDriver();
             js = (JavascriptExecutor) driver;
@@ -42,9 +41,9 @@ public class CheckVideoDurationTest extends BaseTest{
             outputBeforeDelay = new Double(js.executeScript(script.getCurrentTime()).toString());
 
             if (outputBeforeDelay != null) {
-                hollywoodSteps.delay(10000);
+                hollywoodSteps.delay(15000);
                 outputAfterDelay = new Double(js.executeScript(script.getCurrentTime()).toString());
-                Verify.verify((outputAfterDelay - outputBeforeDelay) >= 10,
+                Assert.assertTrue((outputAfterDelay - outputBeforeDelay) >= 10,
                         String.format(
                                 "Difference is less than 10 between 'outputAfterDelay' and 'outputBeforeDelay'. " +
                                         "The 'outputBeforeDelay value is %f, 'outputAfterDelay' value is %f",

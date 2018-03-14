@@ -12,9 +12,8 @@ public abstract class BaseTest {
 
     private static final String DEFAULT_URL = "http://hollywood.slingbox.com/demos/Austin%20Slingplayer.htm";
 
-    @Step("Init WebDriver")
-    @Description("WebDriver is Chrome")
     @BeforeClass
+    @Step("WebDriver initialization. WebDriver is Chrome")
     public static void setupClass() {
         Configuration.browser = "chrome";
     }

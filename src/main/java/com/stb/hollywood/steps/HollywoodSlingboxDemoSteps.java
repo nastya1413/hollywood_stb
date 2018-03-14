@@ -1,11 +1,9 @@
 package com.stb.hollywood.steps;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.WebDriverRunner;
 import com.stb.hollywood.pages.HollywoodSlingboxDemoPage;
 import io.qameta.allure.Step;
 
-import java.util.concurrent.TimeUnit;
 
 public class HollywoodSlingboxDemoSteps {
 
@@ -28,9 +26,17 @@ public class HollywoodSlingboxDemoSteps {
     }
 
     @Step("Click Connect and Stream button")
-    public void clickConnectAndStreamButton()
-    {
-        hllwd_page.getConnectAndStreamButton().click();
+    public void clickConnectAndStreamButton() throws InterruptedException {
+        int attempt = 0;
+        do{
+            System.out.println("Attempt #" + attempt);
+            hllwd_page.getConnectAndStreamButton().click();
+            attempt++;
+            delay(5000);
+            System.out.println("Box status: " + getBoxStatusText());
+        }while(!getBoxStatusText().equals("STARTING_STREAMING") &&
+                !getBoxStatusText().equals("STREAMING") &&
+                attempt < 2);
     }
 
     @Step("Click Connect button")
@@ -88,23 +94,19 @@ public class HollywoodSlingboxDemoSteps {
 
     @Step("Waiting for starting streaming")
     public void waitForStreaming(){
-        hllwd_page.getStreamInfoAudioBuffer().waitUntil(Condition.not(Condition.matchText("*-*")), 30000);
+        hllwd_page.getStreamInfoAudioBuffer().waitUntil(Condition.not(Condition.text("-")), 30000);
     }
 
     @Step("Get Video player attribute 'isVisible'")
     public boolean isPlayerVisible(){
+        waitForPlayer();
         return hllwd_page.getPlayer().isDisplayed();
     }
 
     @Step("Get Box Status text")
     public String getBoxStatusText()
     {
-        return hllwd_page.getBoxStatusLabel().text();
-    }
-
-    @Step("Get Audio stream info buffering text")
-    public String getStreamInfoAudioBuffer(){
-       return hllwd_page.getStreamInfoAudioBuffer().innerText();
+        return hllwd_page.getBoxStatusLabel().innerText().replace(" ", "");
     }
 
     @Step("Delay")
