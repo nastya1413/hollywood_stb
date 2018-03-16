@@ -1,15 +1,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="FullCicle" verbose="1" >
-<test name="Nopackage" >
-    <classes>
-        <class name="com.stb.hollywood.tests.CheckVideoDurationTest" />
-    </classes>
-</test>
+    <test name="CheckVideoDurationTest" >
+        <classes>
+            <class name="com.stb.hollywood.tests.CheckVideoDurationTest" />
+        </classes>
+    </test>
+    <test name="CheckPauseFunctionTest" >
+        <classes>
+            <class name="com.stb.hollywood.tests.CheckPauseFunctionTest" />
+        </classes>
+    </test>
 
-<test name="Regression1">
-    <classes>
-        <!--<class name="com.stb.hollywood.tests.JS_Test" />-->
-    </classes>
-</test>
 </suite>

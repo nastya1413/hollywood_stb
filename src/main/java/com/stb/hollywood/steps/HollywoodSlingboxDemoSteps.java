@@ -59,9 +59,16 @@ public class HollywoodSlingboxDemoSteps {
     }
 
     @Step("Click Disconnect button")
-    public void clickDisconnectButton()
-    {
-        hllwd_page.getDisconnectButton().click();
+    public void clickDisconnectButton() throws InterruptedException {
+        int attempt = 0;
+        do{
+            System.out.println("Attempt #" + attempt);
+            hllwd_page.getDisconnectButton().click();
+            attempt++;
+            delay(1000);
+            System.out.println("Box status: " + getBoxStatusText());
+        }while(!getBoxStatusText().equals("DISCONNECTED") &&
+                attempt < 2);
     }
 
     @Step("Click Play button")
@@ -116,10 +123,19 @@ public class HollywoodSlingboxDemoSteps {
     }
 
     @Step("Validating difference between 'outputAfterDelay' current time and 'outputBeforeDelay' current time for verifying a duration of an event")
-    public void verifyTimeDifference(double outputAfterDelay, double outputBeforeDelay, int expDiffInSec){
+    public void diffShouldBeMoreThan(double outputAfterDelay, double outputBeforeDelay, int expDiffInSec){
         Assert.assertTrue((outputAfterDelay - outputBeforeDelay) >= expDiffInSec,
                 String.format(
                         "Difference is less than %d between 'outputAfterDelay' and 'outputBeforeDelay'. " +
+                                "The 'outputBeforeDelay value is %f, 'outputAfterDelay' value is %f",
+                        expDiffInSec, outputBeforeDelay, outputAfterDelay));
+    }
+
+    @Step("Validating difference between 'outputAfterDelay' current time and 'outputBeforeDelay' current time for verifying a duration of an event")
+    public void diffShouldBeLessThan(double outputAfterDelay, double outputBeforeDelay, int expDiffInSec){
+        Assert.assertTrue((outputAfterDelay - outputBeforeDelay) <= expDiffInSec,
+                String.format(
+                        "Difference is larger than %d between 'outputAfterDelay' and 'outputBeforeDelay'. " +
                                 "The 'outputBeforeDelay value is %f, 'outputAfterDelay' value is %f",
                         expDiffInSec, outputBeforeDelay, outputAfterDelay));
     }

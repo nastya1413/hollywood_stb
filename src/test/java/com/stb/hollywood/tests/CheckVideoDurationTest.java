@@ -1,10 +1,8 @@
 package com.stb.hollywood.tests;
 
-import com.google.common.base.Verify;
 import com.stb.hollywood.steps.HollywoodSlingboxDemoSteps;
 import com.stb.hollywood.utils.JScripts;
 import io.qameta.allure.Description;
-import io.qameta.allure.Step;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -43,7 +41,9 @@ public class CheckVideoDurationTest extends BaseTest{
             if (outputBeforeDelay != null) {
                 hollywoodSteps.delay(15000);
                 outputAfterDelay = new Double(js.executeScript(script.getCurrentTime()).toString());
-                hollywoodSteps.verifyTimeDifference(outputAfterDelay, outputBeforeDelay, 10);
+                hollywoodSteps.diffShouldBeMoreThan(outputAfterDelay, outputBeforeDelay, 10);
+
+                hollywoodSteps.clickDisconnectButton();
             } else {
                 Assert.fail("Current time shouldn't be null");
             }

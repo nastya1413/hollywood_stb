@@ -1,7 +1,6 @@
 package com.stb.hollywood.tests;
 
 import com.codeborne.selenide.Configuration;
-import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 import org.testng.annotations.BeforeClass;
 
@@ -22,4 +21,6 @@ public abstract class BaseTest {
     public void openHollywoodURL(){
         open(DEFAULT_URL);
     }
+
+
 }
