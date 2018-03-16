@@ -3,6 +3,7 @@ package com.stb.hollywood.steps;
 import com.codeborne.selenide.Condition;
 import com.stb.hollywood.pages.HollywoodSlingboxDemoPage;
 import io.qameta.allure.Step;
+import org.testng.Assert;
 
 
 public class HollywoodSlingboxDemoSteps {
@@ -112,5 +113,14 @@ public class HollywoodSlingboxDemoSteps {
     @Step("Delay")
     public void delay(long milliSeconds) throws InterruptedException {
             Thread.sleep(milliSeconds);
+    }
+
+    @Step("Validating difference between 'outputAfterDelay' current time and 'outputBeforeDelay' current time for verifying a duration of an event")
+    public void verifyTimeDifference(double outputAfterDelay, double outputBeforeDelay, int expDiffInSec){
+        Assert.assertTrue((outputAfterDelay - outputBeforeDelay) >= expDiffInSec,
+                String.format(
+                        "Difference is less than %d between 'outputAfterDelay' and 'outputBeforeDelay'. " +
+                                "The 'outputBeforeDelay value is %f, 'outputAfterDelay' value is %f",
+                        expDiffInSec, outputBeforeDelay, outputAfterDelay));
     }
 }

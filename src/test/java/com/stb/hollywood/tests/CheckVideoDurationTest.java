@@ -43,11 +43,7 @@ public class CheckVideoDurationTest extends BaseTest{
             if (outputBeforeDelay != null) {
                 hollywoodSteps.delay(15000);
                 outputAfterDelay = new Double(js.executeScript(script.getCurrentTime()).toString());
-                Assert.assertTrue((outputAfterDelay - outputBeforeDelay) >= 10,
-                        String.format(
-                                "Difference is less than 10 between 'outputAfterDelay' and 'outputBeforeDelay'. " +
-                                        "The 'outputBeforeDelay value is %f, 'outputAfterDelay' value is %f",
-                                outputBeforeDelay, outputAfterDelay));
+                hollywoodSteps.verifyTimeDifference(outputAfterDelay, outputBeforeDelay, 10);
             } else {
                 Assert.fail("Current time shouldn't be null");
             }
