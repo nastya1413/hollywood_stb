@@ -1,23 +1,31 @@
 package com.stb.hollywood.tests;
 
 import com.stb.hollywood.steps.HollywoodSlingboxDemoSteps;
+import com.stb.hollywood.utils.BaseListener;
 import com.stb.hollywood.utils.JScripts;
 import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
+@Listeners({BaseListener.class})
 public class CheckPauseFunctionTest extends BaseTest{
     private JavascriptExecutor js;
     private WebDriver driver;
     HollywoodSlingboxDemoSteps hollywoodSteps;
     JScripts script = new JScripts();
 
-    @Test
+    @Feature("Streaming")
+    @Severity(SeverityLevel.CRITICAL)
     @Description("Checking the 'Pause' functionality")
+    @Test
     public void testStreamingPause() throws InterruptedException {
 
         Double pauseStreamTime;
@@ -29,8 +37,7 @@ public class CheckPauseFunctionTest extends BaseTest{
         js = (JavascriptExecutor) driver;
 
         openHollywoodURL();
-        hollywoodSteps.setFinderID("252300CBA05BAA4397B00C06440C5B4C");
-        hollywoodSteps.setPassword("admin");
+        setDefaultCredentials();
         hollywoodSteps.clickConnectAndStreamButton();
 
         if (hollywoodSteps.isPlayerVisible()) {

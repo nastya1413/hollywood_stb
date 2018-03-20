@@ -1,6 +1,8 @@
 package com.stb.hollywood.tests;
 
 import com.codeborne.selenide.Configuration;
+import com.stb.hollywood.steps.HollywoodSlingboxDemoSteps;
+import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
 import org.testng.annotations.BeforeClass;
 
@@ -10,6 +12,7 @@ import static com.codeborne.selenide.Selenide.open;
 public abstract class BaseTest {
 
     private static final String DEFAULT_URL = "http://hollywood.slingbox.com/demos/Austin%20Slingplayer.htm";
+    private HollywoodSlingboxDemoSteps hollywoodSteps;
 
     @BeforeClass
     @Step("WebDriver initialization. WebDriver is Chrome")
@@ -22,5 +25,10 @@ public abstract class BaseTest {
         open(DEFAULT_URL);
     }
 
-
+    @Step("Setting the default credentials")
+    public void setDefaultCredentials (){
+        hollywoodSteps = new HollywoodSlingboxDemoSteps();
+        hollywoodSteps.setFinderID("252300CBA05BAA4397B00C06440C5B4C");
+        hollywoodSteps.setPassword("admin");
+    }
 }

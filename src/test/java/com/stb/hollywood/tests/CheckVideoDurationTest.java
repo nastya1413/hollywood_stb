@@ -1,16 +1,22 @@
 package com.stb.hollywood.tests;
 
 import com.stb.hollywood.steps.HollywoodSlingboxDemoSteps;
+import com.stb.hollywood.utils.BaseListener;
 import com.stb.hollywood.utils.JScripts;
 import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
+@Listeners({BaseListener.class})
 public class CheckVideoDurationTest extends BaseTest{
 
     private JavascriptExecutor js;
@@ -18,8 +24,10 @@ public class CheckVideoDurationTest extends BaseTest{
     HollywoodSlingboxDemoSteps hollywoodSteps;
     JScripts script = new JScripts();
 
-    @Test
+    @Feature("Streaming")
+    @Severity(SeverityLevel.CRITICAL)
     @Description("Checking the video duration using Connect and Stream button")
+    @Test
     public void testVideoDuration() throws InterruptedException {
 
         Double outputBeforeDelay;
@@ -27,8 +35,7 @@ public class CheckVideoDurationTest extends BaseTest{
 
         hollywoodSteps = new HollywoodSlingboxDemoSteps();
         openHollywoodURL();
-        hollywoodSteps.setFinderID("252300CBA05BAA4397B00C06440C5B4C");
-        hollywoodSteps.setPassword("admin");
+        setDefaultCredentials();
         hollywoodSteps.clickConnectAndStreamButton();
 
         if(hollywoodSteps.isPlayerVisible()) {
