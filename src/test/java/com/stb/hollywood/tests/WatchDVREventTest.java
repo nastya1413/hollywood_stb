@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class WatchDVREvent extends BaseTest{
+public class WatchDVREventTest extends BaseTest{
 
     private JavascriptExecutor js;
     private WebDriver driver;

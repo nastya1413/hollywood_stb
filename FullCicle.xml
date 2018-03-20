@@ -11,9 +11,9 @@
             <class name="com.stb.hollywood.tests.CheckPauseFunctionTest" />
         </classes>
     </test>
-    <test name="CheckPauseFunctionTest" >
+    <test name="WatchDVREventTest" >
         <classes>
-            <class name="com.stb.hollywood.tests.WatchDVREvent" />
+            <class name="com.stb.hollywood.tests.WatchDVREventTest" />
         </classes>
     </test>
 </suite>
