@@ -1,6 +1,7 @@
 package com.stb.hollywood.steps;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.SelenideElement;
 import com.stb.hollywood.pages.HollywoodSlingboxDemoPage;
 import io.qameta.allure.Step;
 import org.testng.Assert;
@@ -41,9 +42,16 @@ public class HollywoodSlingboxDemoSteps {
     }
 
     @Step("Click Connect button")
-    public void clickConnectButton()
-    {
-        hllwd_page.getConnectButton().click();
+    public void clickConnectButton() throws InterruptedException {
+        int attempt = 0;
+        do{
+            System.out.println("Attempt #" + attempt);
+            hllwd_page.getConnectButton().click();
+            attempt++;
+            delay(5000);
+            System.out.println("Box status: " + getBoxStatusText());
+        }while(!getBoxStatusText().equals("CONNECTED") &&
+                attempt < 2);
     }
 
     @Step("Click Start Streaming button")
@@ -84,9 +92,20 @@ public class HollywoodSlingboxDemoSteps {
     }
 
     @Step("Click Get DVR List button")
-    public void clickGetDVR_ListButton()
-    {
+    public void clickGetDVR_ListButton() throws InterruptedException {
         hllwd_page.getGetDVR_ListButton().click();
+        delay(1000);
+    }
+
+    @Step("Click Get DVR List options by value")
+    public void selectDVR_ListOptionByValue(String option){
+        System.out.println("Selected progran ID is " + option);
+        hllwd_page.getGetDVR_ListDropDown().selectOptionByValue(option);
+    }
+
+    @Step("Click get selected DVR List option")
+    public String getSelectedDVR_ListOption(){
+        return hllwd_page.getGetDVR_ListDropDown().getSelectedText();
     }
 
     @Step("Click CC config button")
@@ -109,6 +128,11 @@ public class HollywoodSlingboxDemoSteps {
     public boolean isPlayerVisible(){
         waitForPlayer();
         return hllwd_page.getPlayer().isDisplayed();
+    }
+
+    @Step("Get Video player attribute 'isExist'")
+    public boolean isPlayerExist(){
+        return hllwd_page.getPlayer().exists();
     }
 
     @Step("Get Box Status text")
@@ -138,5 +162,16 @@ public class HollywoodSlingboxDemoSteps {
                         "Difference is larger than %d between 'outputAfterDelay' and 'outputBeforeDelay'. " +
                                 "The 'outputBeforeDelay value is %f, 'outputAfterDelay' value is %f",
                         expDiffInSec, outputBeforeDelay, outputAfterDelay));
+    }
+
+    /*The getProgramTitle method should return a String value with program info - program title data e.g. 'Fixer Upper'*/
+    @Step("Get program title")
+    public String getProgramTitle(){
+        return hllwd_page.getPlayer().toString();
+    }
+
+    @Step("Comparing expected and actual titles of a steaming event")
+    public void validateProgramTitle(String expectedTitle, String actualTitle){
+        Assert.assertEquals(expectedTitle, actualTitle );
     }
 }

@@ -82,6 +82,11 @@ public class HollywoodSlingboxDemoPage {
         return $(By.id("dvr-list"));
     }
 
+    public SelenideElement getGetDVR_ListDropDown()
+    {
+        return $(By.id("play-dvr"));
+    }
+
     public SelenideElement getCC_Config()
     {
         return $(By.id("btn btn-mini yellow_button"));
