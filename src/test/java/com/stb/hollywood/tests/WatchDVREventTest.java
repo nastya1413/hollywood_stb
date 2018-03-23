@@ -1,19 +1,13 @@
 package com.stb.hollywood.tests;
 
 import com.stb.hollywood.steps.HollywoodSlingboxDemoSteps;
-import com.stb.hollywood.utils.JScripts;
 import io.qameta.allure.*;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class WatchDVREventTest extends BaseTest{
 
-    private JavascriptExecutor js;
-    private WebDriver driver;
     HollywoodSlingboxDemoSteps hollywoodSteps;
-    JScripts script = new JScripts();
     String dvrID = "117";
     String selectedDVRTitle = "";
     String actualDVRTitle = "";

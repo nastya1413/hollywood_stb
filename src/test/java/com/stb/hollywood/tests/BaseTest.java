@@ -3,7 +3,6 @@ package com.stb.hollywood.tests;
 import com.codeborne.selenide.Configuration;
 import com.stb.hollywood.steps.HollywoodSlingboxDemoSteps;
 import com.stb.hollywood.utils.BaseListener;
-import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
