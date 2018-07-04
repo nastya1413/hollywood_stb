@@ -2,68 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="394864b7-be66-4793-82f1-09a57746962e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/bin/allure" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/bin/allure.bat" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/config/allure-cucumber.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/config/allure-junit.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/config/allure.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/allure-commandline-2.0.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/allure-generator-2.0.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/allure-plugin-api-2.0.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/allure1-model-1.0.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/allure2-model-api-1.0-BETA4.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/allure2-model-jackson-1.0-BETA4.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/allure2-model-pojo-1.0-BETA4.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/asm-5.0.3.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/asm-analysis-5.0.3.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/asm-tree-5.0.3.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/asm-util-5.0.3.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/commons-io-2.5.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/config/jetty-logging.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/config/log4j.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/freemarker-2.3.23.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/jackson-annotations-2.8.0.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/jackson-core-2.8.6.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/jackson-databind-2.8.6.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/jackson-dataformat-yaml-2.8.6.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/jackson-module-jaxb-annotations-2.8.6.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/javax.servlet-api-3.1.0.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/jaxb-utils-1.0.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/jcommander-1.64.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/jetty-http-9.2.2.v20140723.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/jetty-io-9.2.2.v20140723.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/jetty-server-9.2.2.v20140723.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/jetty-util-9.2.2.v20140723.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/log4j-1.2.17.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/parboiled-core-1.1.7.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/parboiled-java-1.1.7.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/pegdown-1.6.0.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/properties-2.0.RC5.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/slf4j-api-1.7.21.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/slf4j-log4j12-1.7.21.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/snakeyaml-1.17.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/lib/tika-core-1.14.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/plugins/README.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/plugins/behaviors-plugin/allure-plugin.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/plugins/behaviors-plugin/plugin.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/plugins/behaviors-plugin/static/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/plugins/custom-logo-plugin/allure-plugin.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/plugins/custom-logo-plugin/static/Dish_logo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/plugins/custom-logo-plugin/static/custom-logo.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/plugins/custom-logo-plugin/static/styles.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/plugins/junit-plugin/allure-plugin.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/plugins/junit-plugin/junit-plugin-2.0.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/plugins/junit-plugin/lib/doxia-sink-api-1.0.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/plugins/junit-plugin/lib/maven-reporting-api-3.0.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/plugins/junit-plugin/lib/surefire-report-parser-2.19.1.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/plugins/packages-plugin/allure-plugin.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/plugins/packages-plugin/plugin.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/plugins/packages-plugin/static/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/plugins/screen-diff-plugin/allure-plugin.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/plugins/screen-diff-plugin/static/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/plugins/screen-diff-plugin/static/styles.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/test-results/Test Results - WatchDVREventTest.html" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.allure/allure-2.0.1/bin/allure.bat" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/bin/allure.bat" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/FullCycle.xml" afterPath="$PROJECT_DIR$/FullCycle.xml" />
       <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
@@ -872,7 +811,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521561367083</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Installed and added allure for tracking. Added dish logo">
+      <created>1530707739347</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1530707739348</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -927,12 +873,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22601984" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1996805" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33747178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33747178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295711" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33069977" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2715655" sideWeight="0.49668875" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2715655" sideWeight="0.49668875" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Tail" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1031,7 +977,8 @@
     <MESSAGE value="Added BaseListener class for taking screenshots" />
     <MESSAGE value="Added WatchDVREvent test case" />
     <MESSAGE value="minor refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor refactor" />
+    <MESSAGE value="Installed and added allure for tracking. Added dish logo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Installed and added allure for tracking. Added dish logo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

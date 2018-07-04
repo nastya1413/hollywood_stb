@@ -29,7 +29,7 @@ public abstract class BaseTest {
     @Step("Setting the default credentials")
     public void setDefaultCredentials (){
         hollywoodSteps = new HollywoodSlingboxDemoSteps();
-        hollywoodSteps.setFinderID("252300CBA05BAA4397B00C06440C5B4C");
+        hollywoodSteps.setFinderID("BAAB3FDC56BAD9439B63C4AC826EFCE4");
         hollywoodSteps.setPassword("admin");
     }
 }

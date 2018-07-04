@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class WatchDVREventTest extends BaseTest{
 
     HollywoodSlingboxDemoSteps hollywoodSteps;
-    String dvrID = "117";
+    String dvrTitle = "South Park";
     String selectedDVRTitle = "";
     String actualDVRTitle = "";
 
@@ -26,7 +26,7 @@ public class WatchDVREventTest extends BaseTest{
         Assert.assertEquals(hollywoodSteps.isPlayerExist(), false);
 
         hollywoodSteps.clickGetDVR_ListButton();
-        hollywoodSteps.selectDVR_ListOptionByValue(dvrID);
+        hollywoodSteps.selectDVR_ListOptionByValue(dvrTitle);
         selectedDVRTitle = hollywoodSteps.getSelectedDVR_ListOption();
         hollywoodSteps.clickStartStreamingButton();
         hollywoodSteps.waitForStreaming();
@@ -34,7 +34,7 @@ public class WatchDVREventTest extends BaseTest{
 
 //        get actual title  is temporary hardcoded due to JS hollywood API doesn’t support TV info yet.
 //        actualDVRTitle = hollywoodSteps.getProgramTitle();
-        actualDVRTitle = "Fixer Upper"; //temporary hardcoded
+        actualDVRTitle = "South Park"; //temporary hardcoded
         hollywoodSteps.validateProgramTitle(selectedDVRTitle, actualDVRTitle);
     }
 }

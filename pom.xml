@@ -57,6 +57,7 @@
                 <version>2.9</version>
                 <configuration>
                     <resultsDirectory>${basedir}/allure-results</resultsDirectory>
+                    <reportDirectory>${basedir}/AllureReports/${maven.build.timestamp}</reportDirectory>
                 </configuration>
             </plugin>
             <!-- maven-compiler-plugin -->
@@ -91,7 +92,7 @@
                     </execution>
                 </executions>
             </plugin>
-            <!-- maven-pdf-plugin -->
+            <!-- maven-pdf-plugin
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pdf-plugin</artifactId>
@@ -109,7 +110,7 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 

@@ -38,7 +38,7 @@ public class HollywoodSlingboxDemoSteps {
             System.out.println("Box status: " + getBoxStatusText());
         }while(!getBoxStatusText().equals("STARTING_STREAMING") &&
                 !getBoxStatusText().equals("STREAMING") &&
-                attempt < 2);
+                attempt < 10);
     }
 
     @Step("Click Connect button")
@@ -51,7 +51,7 @@ public class HollywoodSlingboxDemoSteps {
             delay(5000);
             System.out.println("Box status: " + getBoxStatusText());
         }while(!getBoxStatusText().equals("CONNECTED") &&
-                attempt < 2);
+                attempt < 10);
     }
 
     @Step("Click Start Streaming button")
@@ -99,8 +99,8 @@ public class HollywoodSlingboxDemoSteps {
 
     @Step("Click Get DVR List options by value")
     public void selectDVR_ListOptionByValue(String option){
-        System.out.println("Selected progran ID is " + option);
-        hllwd_page.getGetDVR_ListDropDown().selectOptionByValue(option);
+        System.out.println("Selected program ID is " + option);
+        hllwd_page.getGetDVR_ListDropDown().selectOptionContainingText(option);
     }
 
     @Step("Click get selected DVR List option")
@@ -116,7 +116,7 @@ public class HollywoodSlingboxDemoSteps {
 
     @Step("Waiting for Video player")
     public void waitForPlayer(){
-        hllwd_page.getPlayer().waitUntil(Condition.appears, 30000);
+        hllwd_page.getPlayer().waitUntil(Condition.appears, 60000);
     }
 
     @Step("Waiting for starting streaming")
