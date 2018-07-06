@@ -1,6 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="FullCycle" verbose="1" >
+    <test name="WatchDVREventTest" >
+        <classes>
+            <class name="com.stb.hollywood.tests.ConnectAndStreamTest" />
+        </classes>
+    </test>
     <test name="CheckVideoDurationTest" >
         <classes>
             <class name="com.stb.hollywood.tests.CheckVideoDurationTest" />

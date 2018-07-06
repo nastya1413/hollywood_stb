@@ -76,7 +76,8 @@ public class HollywoodSlingboxDemoSteps {
             delay(1000);
             System.out.println("Box status: " + getBoxStatusText());
         }while(!getBoxStatusText().equals("DISCONNECTED") &&
-                attempt < 2);
+                attempt < 10);
+        delay(5000);
     }
 
     @Step("Click Play button")

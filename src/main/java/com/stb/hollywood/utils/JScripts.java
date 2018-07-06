@@ -14,4 +14,19 @@ public class JScripts {
     public String isVideoPaused(){
         return String.format("return %s.paused;", videoElementID);
     }
+
+    @Step("Get width of video")
+    public String getVideoWidth(){
+        return String.format("return %s.width;", videoElementID);
+    }
+
+    @Step("Get height of video")
+    public String getVideoHeight(){
+        return String.format("return %s.height;", videoElementID);
+    }
+
+    @Step("Are player controls displayed?")
+    public String isControlsVisible(){
+        return String.format("return %s.controls;", videoElementID);
+    }
 }

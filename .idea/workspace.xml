@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="394864b7-be66-4793-82f1-09a57746962e" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/stb/hollywood/utils/LogUtil.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/ConnectAndStreamTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test-results/Test Results - ConnectAndStreamTest.html" />
       <change beforePath="$PROJECT_DIR$/.allure/allure-2.0.1/bin/allure.bat" afterPath="$PROJECT_DIR$/.allure/allure-2.0.1/bin/allure.bat" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/FullCycle.xml" afterPath="$PROJECT_DIR$/FullCycle.xml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/stb/hollywood/steps/HollywoodSlingboxDemoSteps.java" afterPath="$PROJECT_DIR$/src/main/java/com/stb/hollywood/steps/HollywoodSlingboxDemoSteps.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stb/hollywood/utils/JScripts.java" afterPath="$PROJECT_DIR$/src/main/java/com/stb/hollywood/utils/JScripts.java" />
+      <change beforePath="$PROJECT_DIR$/src/resources/environment.properties" afterPath="$PROJECT_DIR$/src/resources/environment.properties" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/BaseTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/BaseTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/WatchDVREventTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/WatchDVREventTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,11 +36,12 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="37" column="47" lean-forward="false" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+            <state relative-caret-position="209">
+              <caret line="74" column="50" lean-forward="false" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="50" />
               <folding>
+                <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+                <element signature="n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
                 <element signature="n#plugin#2;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
-                <element signature="n#plugin#3;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
                 <element signature="e#3808#4639#0" expanded="false" />
               </folding>
             </state>
@@ -47,8 +51,8 @@
       <file leaf-file-name="BaseTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/BaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="30" column="34" lean-forward="false" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+            <state relative-caret-position="351">
+              <caret line="31" column="68" lean-forward="false" selection-start-line="31" selection-start-column="68" selection-end-line="31" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,21 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WatchDVREventTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/WatchDVREventTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="HollywoodSlingboxDemoSteps.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/stb/hollywood/steps/HollywoodSlingboxDemoSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+            <state relative-caret-position="251">
+              <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
               <folding>
                 <element signature="e#372#373#0" expanded="true" />
                 <element signature="e#432#433#0" expanded="true" />
@@ -78,8 +72,9 @@
                 <element signature="method#clickConnectButton#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
                 <element signature="method#clickDisconnectButton#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
                 <element signature="method#clickGetDVR_ListButton#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
-                <element signature="method#waitForStreaming#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
+                <element signature="method#selectDVR_ListOptionByValue#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
                 <element signature="method#isPlayerVisible#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
+                <element signature="e#4333#4334#0" expanded="true" />
                 <element signature="method#delay#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
                 <element signature="method#diffShouldBeMoreThan#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
                 <element signature="method#diffShouldBeLessThan#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
@@ -89,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/stb/hollywood/utils/BaseListener.java">
+      <file leaf-file-name="ConnectAndStreamTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/ConnectAndStreamTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="78">
+              <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,22 +96,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.allure/allure-2.0.1/plugins/custom-logo-plugin/static/styles.css">
+      <file leaf-file-name="LogUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/stb/hollywood/utils/LogUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="156">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="allure.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.allure/allure-2.0.1/config/allure.yml">
+      <file leaf-file-name="JScripts.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/stb/hollywood/utils/JScripts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="299">
+              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+              <folding>
+                <element signature="e#481#482#0" expanded="true" />
+                <element signature="e#554#555#0" expanded="true" />
+                <element signature="e#622#623#0" expanded="true" />
+                <element signature="e#694#695#0" expanded="true" />
+                <element signature="e#764#765#0" expanded="true" />
+                <element signature="e#837#838#0" expanded="true" />
+                <element signature="e#921#922#0" expanded="true" />
+                <element signature="e#996#997#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -135,6 +139,9 @@
       <find>bitmovinplayer-video-dashPlayer</find>
       <find>dis</find>
       <find>getBoxStatusText</find>
+      <find>clean</find>
+      <find>driver</find>
+      <find>js</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Anastasiia.Malieieva\Documents\hollywood_stb\allure-results</dir>
@@ -157,10 +164,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/stb/hollywood/steps/SlingboxDemoSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/JS_Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/ConnectTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/ConnectAndStreamTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/ConnectAndStreamCheckDurationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/CheckStopStreamingFunctionTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/stb/hollywood/utils/JScripts.java" />
         <option value="$PROJECT_DIR$/src/test/resources/environment.xml.properties" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/stb/hollywood/utils/BaseListener.java" />
@@ -172,17 +177,20 @@
         <option value="$PROJECT_DIR$/src/main/java/com/stb/hollywood/utils/EnvironmentOrganizer.java" />
         <option value="$PROJECT_DIR$/allure-results/allure.properties" />
         <option value="$PROJECT_DIR$/src/test/environment.properties" />
-        <option value="$PROJECT_DIR$/src/resources/environment.properties" />
         <option value="$PROJECT_DIR$/.allure/allure-2.0.1/plugins/custom-logo-plugin/static/custom-logo.svg" />
         <option value="$PROJECT_DIR$/.allure/allure-2.0.1/plugins/custom-logo-plugin/allure-plugin.yml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/WatchDVREventTest.java" />
-        <option value="$PROJECT_DIR$/FullCycle.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/stb/hollywood/steps/HollywoodSlingboxDemoSteps.java" />
         <option value="$PROJECT_DIR$/.allure/allure-2.0.1/plugins/packages-plugin/allure-plugin.yml" />
         <option value="$PROJECT_DIR$/.allure/allure-2.0.1/config/allure.yml" />
         <option value="$PROJECT_DIR$/.allure/allure-2.0.1/plugins/custom-logo-plugin/static/styles.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/stb/hollywood/steps/HollywoodSlingboxDemoSteps.java" />
+        <option value="$PROJECT_DIR$/src/resources/environment.properties" />
+        <option value="$PROJECT_DIR$/FullCycle.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/stb/hollywood/utils/JScripts.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/stb/hollywood/utils/LogUtil.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/ConnectAndStreamTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/BaseTest.java" />
       </list>
     </option>
   </component>
@@ -220,9 +228,8 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1" />
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="25" />
     <option name="width" value="1920" />
     <option name="height" value="1005" />
   </component>
@@ -256,7 +263,48 @@
             <path>
               <item name="hollywood_stb" type="b2602c69:ProjectViewProjectNode" />
               <item name="hollywood_stb" type="462c0819:PsiDirectoryNode" />
+              <item name="AllureReports" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hollywood_stb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hollywood_stb" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hollywood_stb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hollywood_stb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hollywood_stb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hollywood_stb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hollywood_stb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hollywood_stb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hollywood" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hollywood_stb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hollywood_stb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hollywood" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hollywood_stb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hollywood_stb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hollywood_stb" type="b2602c69:ProjectViewProjectNode" />
@@ -278,6 +326,11 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hollywood_stb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hollywood_stb" type="462c0819:PsiDirectoryNode" />
+              <item name="test-results" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -320,7 +373,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./Users/maliana/automation/hollywood_html5/hollywood_stb/FullCycle.xml">
+  <component name="RunManager" selected="TestNG.ConnectAndStreamTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -488,6 +541,38 @@
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" value="" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="ConnectAndStreamTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.stb.hollywood.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="hollywood_stb" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.stb.hollywood.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.stb.hollywood.tests.ConnectAndStreamTest" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
       <envs />
       <properties />
       <listeners />
@@ -706,7 +791,7 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="10">
+    <list size="11">
       <item index="0" class="java.lang.String" itemvalue="TestNG./Users/maliana/automation/hollywood_html5/hollywood_stb/FullCycle.xml" />
       <item index="1" class="java.lang.String" itemvalue="TestNG.WatchDVREventTest" />
       <item index="2" class="java.lang.String" itemvalue="TestNG.ConnectTest.connectingTest" />
@@ -717,13 +802,15 @@
       <item index="7" class="java.lang.String" itemvalue="TestNG.CheckVideoDurationTest.testVideoDuration" />
       <item index="8" class="java.lang.String" itemvalue="TestNG.CheckPauseFunctionTest.testStreamingPause" />
       <item index="9" class="java.lang.String" itemvalue="TestNG.WatchDVREventTest.testWatchDVREvent" />
+      <item index="10" class="java.lang.String" itemvalue="TestNG.ConnectAndStreamTest" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.CheckVideoDurationTest" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.WatchDVREventTest.testWatchDVREvent" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.CheckVideoDurationTest.testVideoDuration" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.CheckPauseFunctionTest.testStreamingPause" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="TestNG.ConnectAndStreamTest" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.CheckVideoDurationTest" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.WatchDVREventTest.testWatchDVREvent" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.CheckVideoDurationTest.testVideoDuration" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.CheckPauseFunctionTest.testStreamingPause" />
       </list>
     </recent_temporary>
   </component>
@@ -818,39 +905,46 @@
       <option name="project" value="LOCAL" />
       <updated>1530707739348</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Stabilized test cases. Added setting for generating allure report.">
+      <created>1530707849451</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1530707849451</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WatchDVREventTest - 2018.07.03 at 11h 08m 35s.xml">
-      <configuration name="WatchDVREventTest" configurationId="TestNG" />
+    <history-entry file="ConnectAndStreamTest - 2018.07.06 at 11h 14m 01s.xml">
+      <configuration name="ConnectAndStreamTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WatchDVREventTest - 2018.07.03 at 11h 11m 27s.xml">
-      <configuration name="WatchDVREventTest" configurationId="TestNG" />
+    <history-entry file="ConnectAndStreamTest - 2018.07.06 at 11h 19m 27s.xml">
+      <configuration name="ConnectAndStreamTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WatchDVREventTest - 2018.07.03 at 11h 15m 06s.xml">
-      <configuration name="WatchDVREventTest" configurationId="TestNG" />
+    <history-entry file="ConnectAndStreamTest - 2018.07.06 at 12h 02m 53s.xml">
+      <configuration name="ConnectAndStreamTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WatchDVREventTest - 2018.07.03 at 11h 16m 33s.xml">
-      <configuration name="WatchDVREventTest" configurationId="TestNG" />
+    <history-entry file="ConnectAndStreamTest - 2018.07.06 at 12h 12m 55s.xml">
+      <configuration name="ConnectAndStreamTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WatchDVREventTest - 2018.07.03 at 11h 25m 31s.xml">
-      <configuration name="WatchDVREventTest" configurationId="TestNG" />
+    <history-entry file="ConnectAndStreamTest - 2018.07.06 at 12h 25m 59s.xml">
+      <configuration name="ConnectAndStreamTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WatchDVREventTest - 2018.07.03 at 11h 27m 50s.xml">
-      <configuration name="WatchDVREventTest" configurationId="TestNG" />
+    <history-entry file="ConnectAndStreamTest - 2018.07.06 at 12h 29m 33s.xml">
+      <configuration name="ConnectAndStreamTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WatchDVREventTest - 2018.07.03 at 11h 29m 28s.xml">
-      <configuration name="WatchDVREventTest" configurationId="TestNG" />
+    <history-entry file="ConnectAndStreamTest - 2018.07.06 at 15h 09m 35s.xml">
+      <configuration name="ConnectAndStreamTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="WatchDVREventTest - 2018.07.03 at 11h 40m 36s.xml">
-      <configuration name="WatchDVREventTest" configurationId="TestNG" />
+    <history-entry file="ConnectAndStreamTest - 2018.07.06 at 16h 11m 39s.xml">
+      <configuration name="ConnectAndStreamTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_maliana_automation_hollywood_html5_hollywood_stb_FullCycle_xml - 2018.07.03 at 10h 47m 13s.xml">
-      <configuration name="/Users/maliana/automation/hollywood_html5/hollywood_stb/FullCycle.xml" configurationId="TestNG" />
+    <history-entry file="ConnectAndStreamTest - 2018.07.06 at 16h 15m 03s.xml">
+      <configuration name="ConnectAndStreamTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_Users_maliana_automation_hollywood_html5_hollywood_stb_FullCycle_xml - 2018.07.03 at 13h 17m 58s.xml">
-      <configuration name="/Users/maliana/automation/hollywood_html5/hollywood_stb/FullCycle.xml" configurationId="TestNG" />
+    <history-entry file="ConnectAndStreamTest - 2018.07.06 at 17h 01m 23s.xml">
+      <configuration name="ConnectAndStreamTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -863,7 +957,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1005" extended-state="6" />
+    <frame x="0" y="25" width="1920" height="1005" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32855567" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -874,18 +968,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22601984" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1996805" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33747178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295711" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29683974" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33069977" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2715655" sideWeight="0.49668875" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16613418" sideWeight="0.49668875" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Tail" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24919528" sideWeight="0.5033113" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39841986" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44130924" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -978,22 +1072,17 @@
     <MESSAGE value="Added WatchDVREvent test case" />
     <MESSAGE value="minor refactor" />
     <MESSAGE value="Installed and added allure for tracking. Added dish logo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Installed and added allure for tracking. Added dish logo" />
+    <MESSAGE value="Stabilized test cases. Added setting for generating allure report." />
+    <option name="LAST_COMMIT_MESSAGE" value="Stabilized test cases. Added setting for generating allure report." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/stb/hollywood/steps/HollywoodSlingboxDemoSteps.java</url>
-          <line>112</line>
+          <line>113</line>
           <properties />
           <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/stb/hollywood/steps/HollywoodSlingboxDemoSteps.java</url>
-          <line>31</line>
-          <properties />
-          <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/WatchDVREventTest.java</url>
@@ -1002,64 +1091,49 @@
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/stb/hollywood/steps/HollywoodSlingboxDemoSteps.java</url>
-          <line>107</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/stb/hollywood/utils/JScripts.java</url>
+          <line>24</line>
           <properties />
-          <option name="timeStamp" value="28" />
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/stb/hollywood/utils/JScripts.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="30" />
+      <option name="time" value="45" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="TestNG">
+        <watch expression="script.getVideoWidth()" language="JAVA" />
+        <watch expression="js.executeScript(script.getVideoHeight()).toString()" language="JAVA" />
+        <watch expression="js" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>js</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>js.executeScript(script.getVideoHeight()).toString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>script.getVideoWidth()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.2/testng-6.14.2.jar!/org/testng/internal/ObjectFactoryImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.2/testng-6.14.2.jar!/org/testng/internal/ClassHelper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="326" column="0" lean-forward="false" selection-start-line="326" selection-start-column="0" selection-end-line="326" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.2/testng-6.14.2.jar!/org/testng/internal/ClassImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="188" column="0" lean-forward="false" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.2/testng-6.14.2.jar!/org/testng/TestClass.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.2/testng-6.14.2.jar!/org/testng/internal/MethodInvocationHelper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/codeborne/selenide/4.10.01/selenide-4.10.01.jar!/com/codeborne/selenide/Selenide.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stb/hollywood/utils/Delay.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/ConnectTest.java" />
-    <entry file="file://$PROJECT_DIR$/TestResults/Test Results - C__Users_Anastasiia_Malieieva_Documents_hollywood_stb_FullCicle_xml.html" />
     <entry file="file://$PROJECT_DIR$/allure-results/2f13dacb-0789-4b90-a149-68480289e0cd-result.json" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.2/testng-6.14.2.jar!/org/testng/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.2/testng-6.14.2.jar!/org/testng/SuiteRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
@@ -1071,37 +1145,10 @@
     <entry file="jar://$MAVEN_REPOSITORY$/io/qameta/allure/allure-java-commons/2.6.0/allure-java-commons-2.6.0.jar!/io/qameta/allure/aspects/StepsAspects.class" />
     <entry file="file://$PROJECT_DIR$/src/test/resources/environment.xml.properties" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.xml" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.2/testng-6.14.2.jar!/org/testng/internal/Invoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="450" column="0" lean-forward="false" selection-start-line="450" selection-start-column="0" selection-end-line="450" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/environment.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/CheckPauseFunctionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/CheckVideoDurationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="41" column="40" lean-forward="true" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1121,13 +1168,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/environment.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -1163,14 +1203,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FullCycle.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/stb/hollywood/pages/HollywoodSlingboxDemoPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -1200,75 +1232,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stb/hollywood/utils/BaseListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stb/hollywood/utils/JScripts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/BaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="30" column="34" lean-forward="false" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/WatchDVREventTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stb/hollywood/steps/HollywoodSlingboxDemoSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding>
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-            <element signature="method#clickConnectAndStreamButton#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
-            <element signature="method#clickConnectButton#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
-            <element signature="method#clickDisconnectButton#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
-            <element signature="method#clickGetDVR_ListButton#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
-            <element signature="method#waitForStreaming#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
-            <element signature="method#isPlayerVisible#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
-            <element signature="method#delay#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
-            <element signature="method#diffShouldBeMoreThan#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
-            <element signature="method#diffShouldBeLessThan#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
-            <element signature="method#validateProgramTitle#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="37" column="47" lean-forward="false" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
-          <folding>
-            <element signature="n#plugin#2;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#plugin#3;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="e#3808#4639#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1306,18 +1269,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.allure/allure-2.0.1/config/allure.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.allure/allure-2.0.1/plugins/packages-plugin/allure-plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.allure/allure-2.0.1/config/allure.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1327,6 +1290,208 @@
         <state relative-caret-position="78">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/WatchDVREventTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="37" column="40" lean-forward="false" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/CheckPauseFunctionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/environment.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13">
+          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/lang/AssertionError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="72" column="11" lean-forward="false" selection-start-line="72" selection-start-column="11" selection-end-line="72" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.2/testng-6.14.2.jar!/org/testng/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324">
+          <caret line="53" column="28" lean-forward="false" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.2/testng-6.14.2.jar!/org/testng/asserts/LoggingAssert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.2/testng-6.14.2.jar!/org/testng/log4testng/Logger.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="44" column="38" lean-forward="false" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.2/testng-6.14.2.jar!/org/testng/internal/MethodInvocationHelper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/CheckVideoDurationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="29" column="33" lean-forward="true" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-results/Test Results - ConnectAndStreamTest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.2/testng-6.14.2.jar!/org/testng/internal/Invoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="449" column="0" lean-forward="false" selection-start-line="449" selection-start-column="0" selection-end-line="449" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FullCycle.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="5" column="69" lean-forward="false" selection-start-line="5" selection-start-column="69" selection-end-line="5" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="74" column="50" lean-forward="false" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="50" />
+          <folding>
+            <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#plugin#2;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="e#3808#4639#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stb/hollywood/utils/LogUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjrt/1.8.10/aspectjrt-1.8.10.jar!/org/aspectj/runtime/reflect/Factory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/io/FileInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="218" column="23" lean-forward="false" selection-start-line="218" selection-start-column="23" selection-end-line="218" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stb/hollywood/utils/JScripts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="e#481#482#0" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+            <element signature="e#694#695#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#837#838#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+            <element signature="e#996#997#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stb/hollywood/utils/BaseListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="31" column="68" lean-forward="false" selection-start-line="31" selection-start-column="68" selection-end-line="31" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stb/hollywood/steps/HollywoodSlingboxDemoSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+          <folding>
+            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="method#clickConnectAndStreamButton#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
+            <element signature="method#clickConnectButton#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
+            <element signature="method#clickDisconnectButton#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
+            <element signature="method#clickGetDVR_ListButton#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
+            <element signature="method#selectDVR_ListOptionByValue#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
+            <element signature="method#isPlayerVisible#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
+            <element signature="e#4333#4334#0" expanded="true" />
+            <element signature="method#delay#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
+            <element signature="method#diffShouldBeMoreThan#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
+            <element signature="method#diffShouldBeLessThan#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
+            <element signature="method#validateProgramTitle#0;class#HollywoodSlingboxDemoSteps#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/stb/hollywood/tests/ConnectAndStreamTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
