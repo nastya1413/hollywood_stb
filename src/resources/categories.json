@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Ignored tests",
+    "matchedStatuses": ["skipped"]
+  },
+  {
+    "name": "Product defects",
+    "matchedStatuses": ["failed"]
+  },
+  {
+    "name": "Warning",
+    "traceRegex": "WARNING",
+    "matchedStatuses": ["broken"]
+  }
+]

@@ -55,15 +55,29 @@ public class HollywoodSlingboxDemoSteps {
     }
 
     @Step("Click Start Streaming button")
-    public void clickStartStreamingButton()
-    {
-        hllwd_page.getStartStreamingButton().click();
+    public void clickStartStreamingButton() throws InterruptedException {
+        int attempt = 0;
+        do{
+            System.out.println("Attempt #" + attempt);
+            hllwd_page.getStartStreamingButton().click();
+            attempt++;
+            delay(5000);
+            System.out.println("Box status: " + getBoxStatusText());
+        }while(!getBoxStatusText().equals("STREAMING") &&
+                attempt < 10);
     }
 
     @Step("Click Stop Streaming button")
-    public void clickStopStreamingButton()
-    {
-        hllwd_page.getStopStreamingButton().click();
+    public void clickStopStreamingButton() throws InterruptedException {
+        int attempt = 0;
+        do{
+            System.out.println("Attempt #" + attempt);
+            hllwd_page.getStopStreamingButton().click();
+            attempt++;
+            delay(5000);
+            System.out.println("Box status: " + getBoxStatusText());
+        }while(!getBoxStatusText().equals("CONNECTED") &&
+                attempt < 10);
     }
 
     @Step("Click Disconnect button")

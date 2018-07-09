@@ -46,8 +46,6 @@ public class CheckVideoDurationTest extends BaseTest{
                 hollywoodSteps.delay(15000);
                 outputAfterDelay = new Double(js.executeScript(script.getCurrentTime()).toString());
                 hollywoodSteps.diffShouldBeMoreThan(outputAfterDelay, outputBeforeDelay, 10);
-
-                hollywoodSteps.clickDisconnectButton();
             } else {
                 Assert.fail("Current time shouldn't be null");
             }

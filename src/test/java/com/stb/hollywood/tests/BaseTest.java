@@ -4,6 +4,7 @@ import com.codeborne.selenide.Configuration;
 import com.stb.hollywood.steps.HollywoodSlingboxDemoSteps;
 import com.stb.hollywood.utils.BaseListener;
 import io.qameta.allure.Step;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 
@@ -31,5 +32,12 @@ public abstract class BaseTest {
         hollywoodSteps = new HollywoodSlingboxDemoSteps();
         hollywoodSteps.setFinderID("252300CBA05BAA4397B00C06440C5B4C");
         hollywoodSteps.setPassword("admin");
+    }
+
+    @AfterTest
+    @Step("Performing Disconnecting")
+    public void Disconnecting() throws InterruptedException {
+        hollywoodSteps.clickDisconnectButton();
+        hollywoodSteps.delay(5000);
     }
 }

@@ -1,14 +1,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="FullCycle" verbose="1" >
-    <test name="WatchDVREventTest" >
+    <test name="ConnectTest" >
         <classes>
-            <class name="com.stb.hollywood.tests.ConnectAndStreamTest" />
+            <class name="com.stb.hollywood.tests.ConnectTest" />
         </classes>
     </test>
-    <test name="CheckVideoDurationTest" >
+    <test name="DisconnectAfterConnectionTest" >
         <classes>
-            <class name="com.stb.hollywood.tests.CheckVideoDurationTest" />
+            <class name="com.stb.hollywood.tests.DisconnectAfterConnectionTest" />
+        </classes>
+    </test>
+    <test name="DisconnectAfterStreamingTest" >
+        <classes>
+            <class name="com.stb.hollywood.tests.DisconnectAfterStreamingTest" />
         </classes>
     </test>
     <test name="CheckPauseFunctionTest" >
@@ -16,14 +21,14 @@
             <class name="com.stb.hollywood.tests.CheckPauseFunctionTest" />
         </classes>
     </test>
+    <test name="CheckVideoDurationTest" >
+        <classes>
+            <class name="com.stb.hollywood.tests.CheckVideoDurationTest" />
+        </classes>
+    </test>
     <test name="WatchDVREventTest" >
         <classes>
             <class name="com.stb.hollywood.tests.WatchDVREventTest" />
         </classes>
     </test>
-    <!--<test name="FailedAndSkipped" >
-        <classes>
-            <class name="com.stb.hollywood.tests.FailedAndSkippedTests" />
-        </classes>
-    </test>-->
 </suite>

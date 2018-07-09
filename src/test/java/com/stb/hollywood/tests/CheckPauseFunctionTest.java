@@ -50,8 +50,6 @@ public class CheckPauseFunctionTest extends BaseTest{
                 pauseStreamTimeWithDelay = new Double(js.executeScript(script.getCurrentTime()).toString());
 
                 hollywoodSteps.diffShouldBeLessThan(pauseStreamTimeWithDelay, pauseStreamTime, 1);
-
-                hollywoodSteps.clickDisconnectButton();
             } else {
                 Assert.fail("Video wasn't paused");
             }
