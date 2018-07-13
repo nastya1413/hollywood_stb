@@ -14,6 +14,10 @@ import static com.codeborne.selenide.Selenide.open;
 public abstract class BaseTest {
 
     private static final String DEFAULT_URL = "http://hollywood.slingbox.com/demos/Austin%20Slingplayer.htm";
+
+//    Venu's link
+//    private static final String DEFAULT_URL = "https://hollywood.slingbox.com/drmdemo-austin-v3/app/player.html?debug=true&devTest=true";
+
     private HollywoodSlingboxDemoSteps hollywoodSteps;
 
     @BeforeClass
@@ -30,7 +34,7 @@ public abstract class BaseTest {
     @Step("Setting the default credentials")
     public void setDefaultCredentials (){
         hollywoodSteps = new HollywoodSlingboxDemoSteps();
-        hollywoodSteps.setFinderID("252300CBA05BAA4397B00C06440C5B4C");
+        hollywoodSteps.setFinderID("BAAB3FDC56BAD9439B63C4AC826EFCE4");
         hollywoodSteps.setPassword("admin");
     }
 

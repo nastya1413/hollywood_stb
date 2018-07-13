@@ -34,6 +34,7 @@ public class CheckVideoDurationTest extends BaseTest{
         openHollywoodURL();
         setDefaultCredentials();
         hollywoodSteps.clickConnectAndStreamButton();
+        hollywoodSteps.delay(10000);
 
         if(hollywoodSteps.isPlayerVisible()) {
             driver = getWebDriver();
@@ -43,9 +44,9 @@ public class CheckVideoDurationTest extends BaseTest{
             outputBeforeDelay = new Double(js.executeScript(script.getCurrentTime()).toString());
 
             if (outputBeforeDelay != null) {
-                hollywoodSteps.delay(15000);
+                hollywoodSteps.delay(150000);
                 outputAfterDelay = new Double(js.executeScript(script.getCurrentTime()).toString());
-                hollywoodSteps.diffShouldBeMoreThan(outputAfterDelay, outputBeforeDelay, 10);
+                hollywoodSteps.diffShouldBeMoreThan(outputAfterDelay, outputBeforeDelay, 120);
             } else {
                 Assert.fail("Current time shouldn't be null");
             }

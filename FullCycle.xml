@@ -31,4 +31,9 @@
             <class name="com.stb.hollywood.tests.WatchDVREventTest" />
         </classes>
     </test>
+    <test name="ChannelChangeTest" >
+        <classes>
+            <class name="com.stb.hollywood.tests.ChannelChangeTest" />
+        </classes>
+    </test>
 </suite>

@@ -165,7 +165,7 @@ public class HollywoodSlingboxDemoSteps {
     public void diffShouldBeMoreThan(double outputAfterDelay, double outputBeforeDelay, int expDiffInSec){
         Assert.assertTrue((outputAfterDelay - outputBeforeDelay) >= expDiffInSec,
                 String.format(
-                        "Difference is less than %d between 'outputAfterDelay' and 'outputBeforeDelay'. " +
+                        "Difference is less than %d between 'currentTimeAfterDelay' and 'currentTimeBeforeDelay'. " +
                                 "The 'outputBeforeDelay value is %f, 'outputAfterDelay' value is %f",
                         expDiffInSec, outputBeforeDelay, outputAfterDelay));
     }
@@ -188,5 +188,17 @@ public class HollywoodSlingboxDemoSteps {
     @Step("Comparing expected and actual titles of a steaming event")
     public void validateProgramTitle(String expectedTitle, String actualTitle){
         Assert.assertEquals(expectedTitle, actualTitle );
+    }
+
+    @Step("Click Change channel button")
+    public void clickChangeChannelButton(){
+        hllwd_page.getChanelNumberButton().click();
+    }
+
+    @Step("Change channel")
+    public void changeChannel(String channelNum) throws InterruptedException {
+        hllwd_page.getChanelNumberField().setValue(channelNum);
+        clickChangeChannelButton();
+        delay(15000);
     }
 }

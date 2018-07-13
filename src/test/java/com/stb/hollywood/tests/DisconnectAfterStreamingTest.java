@@ -22,6 +22,7 @@ public class DisconnectAfterStreamingTest extends BaseTest{
         setDefaultCredentials();
         hollywoodSteps.clickConnectAndStreamButton();
         hollywoodSteps.delay(10000);
+        Assert.assertTrue(hollywoodSteps.isPlayerExist(), "Player exists. Streaming was started.");
         hollywoodSteps.clickDisconnectButton();
         Assert.assertFalse(hollywoodSteps.isPlayerExist(), "Player doesn't exist. Streaming was disconnected.");
     }

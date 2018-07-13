@@ -34,7 +34,7 @@ public class HollywoodSlingboxDemoPage {
 
     public SelenideElement getChanelNumberField()
     {
-        return $(By.id("channel-number"));
+        return $(By.name("channel-number"));
     }
 
     public SelenideElement getChanelNumberButton()
