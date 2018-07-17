@@ -1,39 +1,39 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="FullCycle" verbose="1" >
+<suite name="FullCycleOverWAN" verbose="1" >
     <test name="ConnectTest" >
         <classes>
-            <class name="com.stb.hollywood.tests.ConnectTest" />
+            <class name="com.stb.hollywood.tests.WAN.ConnectWANTest" />
         </classes>
     </test>
     <test name="DisconnectAfterConnectionTest" >
         <classes>
-            <class name="com.stb.hollywood.tests.DisconnectAfterConnectionTest" />
+            <class name="com.stb.hollywood.tests.WAN.DisconnectAfterConnectionWANTest" />
         </classes>
     </test>
     <test name="DisconnectAfterStreamingTest" >
         <classes>
-            <class name="com.stb.hollywood.tests.DisconnectAfterStreamingTest" />
+            <class name="com.stb.hollywood.tests.WAN.DisconnectAfterStreamingWANTest" />
         </classes>
     </test>
     <test name="CheckPauseFunctionTest" >
         <classes>
-            <class name="com.stb.hollywood.tests.CheckPauseFunctionTest" />
+            <class name="com.stb.hollywood.tests.WAN.CheckPauseFunctionWANTest" />
         </classes>
     </test>
     <test name="CheckVideoDurationTest" >
         <classes>
-            <class name="com.stb.hollywood.tests.CheckVideoDurationTest" />
+            <class name="com.stb.hollywood.tests.WAN.CheckVideoDurationWANTest" />
         </classes>
     </test>
     <test name="WatchDVREventTest" >
         <classes>
-            <class name="com.stb.hollywood.tests.WatchDVREventTest" />
+            <class name="com.stb.hollywood.tests.WAN.WatchDVREventWANTest" />
         </classes>
     </test>
     <test name="ChannelChangeTest" >
         <classes>
-            <class name="com.stb.hollywood.tests.ChannelChangeTest" />
+            <class name="com.stb.hollywood.tests.WAN.ChannelChangeWANTest" />
         </classes>
     </test>
 </suite>

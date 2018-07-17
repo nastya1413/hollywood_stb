@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="FullCycleOverLAN" verbose="1" >
+    <test name="ConnectTest" >
+        <classes>
+            <class name="com.stb.hollywood.tests.LAN.ConnectLANTest" />
+        </classes>
+    </test>
+    <test name="DisconnectAfterConnectionTest" >
+        <classes>
+            <class name="com.stb.hollywood.tests.LAN.DisconnectAfterConnectionLANTest" />
+        </classes>
+    </test>
+    <test name="DisconnectAfterStreamingTest" >
+        <classes>
+            <class name="com.stb.hollywood.tests.LAN.DisconnectAfterStreamingLANTest" />
+        </classes>
+    </test>
+    <test name="CheckPauseFunctionTest" >
+        <classes>
+            <class name="com.stb.hollywood.tests.LAN.CheckPauseFunctionLANTest" />
+        </classes>
+    </test>
+    <test name="CheckVideoDurationTest" >
+        <classes>
+            <class name="com.stb.hollywood.tests.LAN.CheckVideoDurationLANTest" />
+        </classes>
+    </test>
+    <test name="ChannelChangeTest" >
+        <classes>
+            <class name="com.stb.hollywood.tests.LAN.ChannelChangeLANTest" />
+        </classes>
+    </test>
+</suite>

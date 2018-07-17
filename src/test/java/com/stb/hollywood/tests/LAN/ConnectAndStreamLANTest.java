@@ -1,15 +1,15 @@
-package com.stb.hollywood.tests;
+package com.stb.hollywood.tests.LAN;
 
-import com.stb.hollywood.steps.HollywoodSlingboxDemoSteps;
+import com.stb.hollywood.steps.AustinPlayerLANSteps;
+import com.stb.hollywood.tests.LAN.BaseLANTest;
 import com.stb.hollywood.utils.JScripts;
 import com.stb.hollywood.utils.LogUtil;
-import io.qameta.allure.*;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.impl.Log4JLogger;
+import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -17,11 +17,11 @@ import org.testng.asserts.SoftAssert;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 
-public class ConnectAndStreamTest extends BaseTest{
+public class ConnectAndStreamLANTest extends BaseLANTest {
 
     private JavascriptExecutor js;
     private WebDriver driver;
-    HollywoodSlingboxDemoSteps hollywoodSteps;
+    AustinPlayerLANSteps austinSteps;
     JScripts script = new JScripts();
     String boxStatus = "";
     Boolean isControlsVisible = false;
@@ -35,17 +35,17 @@ public class ConnectAndStreamTest extends BaseTest{
         Double outputAfterDelay;
         SoftAssert softassertion = new SoftAssert();
 
-        hollywoodSteps = new HollywoodSlingboxDemoSteps();
+        austinSteps = new AustinPlayerLANSteps();
         openHollywoodURL();
         setDefaultCredentials();
-        hollywoodSteps.clickConnectButton();
-        hollywoodSteps.clickStartStreamingButton();
-        hollywoodSteps.delay(10000);
+        austinSteps.clickConnectButton();
+        austinSteps.clickStartStreamingButton();
+        austinSteps.delay(10000);
 
-        boxStatus = hollywoodSteps.getBoxStatusText();
+        boxStatus = austinSteps.getBoxStatusText();
 
 
-        if(hollywoodSteps.isPlayerVisible()) {
+        if(austinSteps.isPlayerVisible()) {
             driver = getWebDriver();
             js = (JavascriptExecutor) driver;
 
@@ -63,11 +63,11 @@ public class ConnectAndStreamTest extends BaseTest{
 
             outputBeforeDelay = new Double(js.executeScript(script.getCurrentTime()).toString());
             if (outputBeforeDelay != null) {
-                hollywoodSteps.delay(180000);
+                austinSteps.delay(180000);
                 outputAfterDelay = new Double(js.executeScript(script.getCurrentTime()).toString());
-                hollywoodSteps.diffShouldBeMoreThan(outputAfterDelay, outputBeforeDelay, 150);
+                austinSteps.diffShouldBeMoreThan(outputAfterDelay, outputBeforeDelay, 150);
 
-                hollywoodSteps.clickDisconnectButton();
+                austinSteps.clickDisconnectButton();
             } else {
                 Assert.fail("Current time shouldn't be null");
             }

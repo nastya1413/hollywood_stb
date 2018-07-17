@@ -1,7 +1,7 @@
-package com.stb.hollywood.tests;
+package com.stb.hollywood.tests.LAN;
 
-import com.stb.hollywood.steps.HollywoodSlingboxDemoSteps;
-import com.stb.hollywood.utils.BaseListener;
+import com.stb.hollywood.steps.AustinPlayerLANSteps;
+import com.stb.hollywood.tests.LAN.BaseLANTest;
 import com.stb.hollywood.utils.JScripts;
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
@@ -14,10 +14,10 @@ import org.testng.annotations.Test;
 
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
-public class CheckPauseFunctionTest extends BaseTest{
+public class CheckPauseFunctionLANTest extends BaseLANTest {
     private JavascriptExecutor js;
     private WebDriver driver;
-    HollywoodSlingboxDemoSteps hollywoodSteps;
+    AustinPlayerLANSteps austinSteps;
     JScripts script = new JScripts();
 
     @Feature("Streaming")
@@ -29,27 +29,27 @@ public class CheckPauseFunctionTest extends BaseTest{
         Double pauseStreamTime;
         Double pauseStreamTimeWithDelay;
         Boolean isPaused;
-        hollywoodSteps = new HollywoodSlingboxDemoSteps();
+        austinSteps = new AustinPlayerLANSteps();
 
         driver = getWebDriver();
         js = (JavascriptExecutor) driver;
 
         openHollywoodURL();
         setDefaultCredentials();
-        hollywoodSteps.clickConnectAndStreamButton();
+        austinSteps.clickConnectAndStreamButton();
 
-        if (hollywoodSteps.isPlayerVisible()) {
-            hollywoodSteps.waitForStreaming();
-            hollywoodSteps.delay(10000);
-            hollywoodSteps.clickPauseButton();
+        if (austinSteps.isPlayerVisible()) {
+            austinSteps.waitForStreaming();
+            austinSteps.delay(10000);
+            austinSteps.clickPauseButton();
 
             isPaused = new Boolean(js.executeScript(script.isVideoPaused()).toString());
             if (isPaused){
                 pauseStreamTime = new Double(js.executeScript(script.getCurrentTime()).toString());
-                hollywoodSteps.delay(10000);
+                austinSteps.delay(10000);
                 pauseStreamTimeWithDelay = new Double(js.executeScript(script.getCurrentTime()).toString());
 
-                hollywoodSteps.diffShouldBeLessThan(pauseStreamTimeWithDelay, pauseStreamTime, 1);
+                austinSteps.diffShouldBeLessThan(pauseStreamTimeWithDelay, pauseStreamTime, 1);
             } else {
                 Assert.fail("Video wasn't paused");
             }

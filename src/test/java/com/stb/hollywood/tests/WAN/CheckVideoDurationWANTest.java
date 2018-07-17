@@ -1,6 +1,8 @@
-package com.stb.hollywood.tests;
+package com.stb.hollywood.tests.WAN;
 
+import com.stb.hollywood.steps.AustinPlayerWANSteps;
 import com.stb.hollywood.steps.HollywoodSlingboxDemoSteps;
+import com.stb.hollywood.tests.WAN.BaseWANTest;
 import com.stb.hollywood.utils.JScripts;
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
@@ -14,11 +16,11 @@ import org.testng.annotations.Test;
 
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
-public class CheckVideoDurationTest extends BaseTest{
+public class CheckVideoDurationWANTest extends BaseWANTest {
 
     private JavascriptExecutor js;
     private WebDriver driver;
-    HollywoodSlingboxDemoSteps hollywoodSteps;
+    AustinPlayerWANSteps austinSteps;
     JScripts script = new JScripts();
 
     @Feature("Streaming")
@@ -30,23 +32,23 @@ public class CheckVideoDurationTest extends BaseTest{
         Double outputBeforeDelay;
         Double outputAfterDelay;
 
-        hollywoodSteps = new HollywoodSlingboxDemoSteps();
+        austinSteps = new AustinPlayerWANSteps();
         openHollywoodURL();
         setDefaultCredentials();
-        hollywoodSteps.clickConnectAndStreamButton();
-        hollywoodSteps.delay(10000);
+        austinSteps.clickConnectAndStreamButton();
+        austinSteps.delay(10000);
 
-        if(hollywoodSteps.isPlayerVisible()) {
+        if(austinSteps.isPlayerVisible()) {
             driver = getWebDriver();
             js = (JavascriptExecutor) driver;
 
-            hollywoodSteps.waitForStreaming();
+            austinSteps.waitForStreaming();
             outputBeforeDelay = new Double(js.executeScript(script.getCurrentTime()).toString());
 
             if (outputBeforeDelay != null) {
-                hollywoodSteps.delay(150000);
+                austinSteps.delay(150000);
                 outputAfterDelay = new Double(js.executeScript(script.getCurrentTime()).toString());
-                hollywoodSteps.diffShouldBeMoreThan(outputAfterDelay, outputBeforeDelay, 120);
+                austinSteps.diffShouldBeMoreThan(outputAfterDelay, outputBeforeDelay, 120);
             } else {
                 Assert.fail("Current time shouldn't be null");
             }

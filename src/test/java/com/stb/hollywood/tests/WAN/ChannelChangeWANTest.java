@@ -1,5 +1,6 @@
-package com.stb.hollywood.tests;
+package com.stb.hollywood.tests.WAN;
 
+import com.stb.hollywood.steps.AustinPlayerWANSteps;
 import com.stb.hollywood.steps.HollywoodSlingboxDemoSteps;
 import com.stb.hollywood.utils.JScripts;
 import io.qameta.allure.Description;
@@ -21,10 +22,10 @@ import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
  **********************************************************************/
 
 
-public class ChannelChangeTest extends BaseTest {
+public class ChannelChangeWANTest extends BaseWANTest {
     private JavascriptExecutor js;
     private WebDriver driver;
-    HollywoodSlingboxDemoSteps hollywoodSteps;
+    AustinPlayerWANSteps austinSteps;
 
     String eventTitleBeforeChannelChange = "";
     String eventTitleAfterChannelChange = "";
@@ -41,35 +42,35 @@ public class ChannelChangeTest extends BaseTest {
         driver = getWebDriver();
         js = (JavascriptExecutor) driver;
 
-        hollywoodSteps = new HollywoodSlingboxDemoSteps();
+        austinSteps = new AustinPlayerWANSteps();
         openHollywoodURL();
         setDefaultCredentials();
-        hollywoodSteps.clickConnectAndStreamButton();
-        hollywoodSteps.delay(10000);
-        Assert.assertTrue(hollywoodSteps.isPlayerExist(), "Player exists. Streaming was started.");
+        austinSteps.clickConnectAndStreamButton();
+        austinSteps.delay(10000);
+        Assert.assertTrue(austinSteps.isPlayerExist(), "Player exists. Streaming was started.");
 
 //        get eventTitleBeforeChannelChange is temporary hardcoded due to JS hollywood API doesn’t support TV info yet.
-//        eventTitleBeforeChannelChange = hollywoodSteps.getProgramTitle();
+//        eventTitleBeforeChannelChange = austinSteps.getProgramTitle();
         eventTitleBeforeChannelChange = "South Park"; //temporary hardcoded
         currentTime = new Double(js.executeScript(script.getCurrentTime()).toString());
-        hollywoodSteps.delay(60000);
+        austinSteps.delay(60000);
         currentTimeAfterdelay = new Double(js.executeScript(script.getCurrentTime()).toString());
         try{
-            hollywoodSteps.diffShouldBeMoreThan(currentTimeAfterdelay, currentTime, 40);
+            austinSteps.diffShouldBeMoreThan(currentTimeAfterdelay, currentTime, 40);
         } catch (Exception e){
             softAssert.fail();
         }
 
-        hollywoodSteps.changeChannel("123");
+        austinSteps.changeChannel("123");
 
 //        get eventTitleAfterChannelChange is temporary hardcoded due to JS hollywood API doesn’t support TV info yet.
-//        eventTitleAfterChannelChange = hollywoodSteps.getProgramTitle();
+//        eventTitleAfterChannelChange = austinSteps.getProgramTitle();
         eventTitleAfterChannelChange = "DISH 101"; //temporary hardcoded
         currentTime = new Double(js.executeScript(script.getCurrentTime()).toString());
-        hollywoodSteps.delay(60000);
+        austinSteps.delay(60000);
         currentTimeAfterdelay = new Double(js.executeScript(script.getCurrentTime()).toString());
         try{
-            hollywoodSteps.diffShouldBeMoreThan(currentTimeAfterdelay, currentTime, 40);
+            austinSteps.diffShouldBeMoreThan(currentTimeAfterdelay, currentTime, 40);
         } catch (Exception e){
             softAssert.fail();
         }
